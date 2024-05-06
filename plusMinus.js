@@ -56,25 +56,25 @@
 // SOLUTION
 
 
-// function plusMinus(arr) {
-//     // Write your code here
-//     var len = arr.length
-//     let neg = 0
-//     let pos = 0
-//     let zero = 0
-//     for (var i = 0; i < len; i++) {
-//         if (arr[i] > 0) {
-//             pos++
-//         }
-//         else if (arr[i] < 0) {
-//             neg++
-//         }
-//         else {
-//             zero++
-//         }
-//     }
-//     console.log((pos / len).toPrecision(6))
-//     console.log((neg / len).toPrecision(6))
-//     console.log((zero / len).toPrecision(6))
+function plusMinus(arr) {
+    // Write your code here
+    var len = arr.length
+    let neg = 0
+    let pos = 0
+    let zero = 0
+    for (var i = 0; i < len; i++) {
+        if (arr[i] > 0) {
+            pos++
+        }
+        else if (arr[i] < 0) {
+            neg++
+        }
+        else {
+            zero++
+        }
+    }
+    console.log((pos / len).toPrecision(6))
+    console.log((neg / len).toPrecision(6))
+    console.log((zero / len).toPrecision(6))
 
-// }
+}

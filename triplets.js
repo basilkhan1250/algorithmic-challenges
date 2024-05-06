@@ -78,33 +78,33 @@
 
 // SOLUTION 
 
-// function compareTriplets(a, b) {
-//     var array = []
-//     var bob = 0;
-//     var alice = 0;
-//     if (a[0] > b[0]) {
-//         alice++
-//     }
-//     if (a[1] > b[1]) {
-//         alice++
-//     }
-//     if (a[0] === b[0] || a[1] === b[1] || a[2] === b[2]) {
-//         console.log(" ")
-//     }
-//     if (a[2] > b[2]) {
-//         alice++
-//     }
-//     if (a[0] < b[0]) {
-//         bob++
-//     }
-//     if (a[1] < b[1]) {
-//         console.log(bob++)
-//     }
-//     if (a[2] < b[2]) {
-//         bob++
-//     }
-//     // console.log(alice,bob)
-//     array.push(alice)
-//     array.push(bob)
-//     return array
-// }
+function compareTriplets(a, b) {
+    var array = []
+    var bob = 0;
+    var alice = 0;
+    if (a[0] > b[0]) {
+        alice++
+    }
+    if (a[1] > b[1]) {
+        alice++
+    }
+    if (a[0] === b[0] || a[1] === b[1] || a[2] === b[2]) {
+        console.log(" ")
+    }
+    if (a[2] > b[2]) {
+        alice++
+    }
+    if (a[0] < b[0]) {
+        bob++
+    }
+    if (a[1] < b[1]) {
+        console.log(bob++)
+    }
+    if (a[2] < b[2]) {
+        bob++
+    }
+    // console.log(alice,bob)
+    array.push(alice)
+    array.push(bob)
+    return array
+}

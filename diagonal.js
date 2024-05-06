@@ -60,15 +60,15 @@
 
 // SOLUTION
 
-// function diagonalDifference(arr) {
-//     let len = arr.length
-//    let sum = 0
-//    let sample = 0
-//    let final = 0
-//    for (var i=0; i<len; i++){
-//        sum = sum + arr[i][i]
-//        sample = sample + arr[i][len-1-i]
-//    }
-//    final = sum - sample
-//    return  Math.abs(final)
-// }
+function diagonalDifference(arr) {
+    let len = arr.length
+   let sum = 0
+   let sample = 0
+   let final = 0
+   for (var i=0; i<len; i++){
+       sum = sum + arr[i][i]
+       sample = sample + arr[i][len-1-i]
+   }
+   final = sum - sample
+   return  Math.abs(final)
+}

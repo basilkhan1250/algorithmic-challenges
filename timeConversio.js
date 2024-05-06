@@ -50,29 +50,29 @@
 
 
 
-// function timeConversion(s) {
-//     // Write your code here
-//     let arr = s.split("")
-//     arr.splice(8, 2)
-//     console.log(arr)
-//     if (s.includes("AM")) {
-//         if (s.includes("12")) {
-//             // console.log(s)
-//             arr.splice(0, 1, "0")
-//             arr.splice(1, 1, "0")
-//         }
-//         return arr.join("")
-//     }
-//     if (s.includes("12")) {
-//         if (s.includes("PM")) {
-//             let arr = s.split("")
-//             arr.splice(8, 2)
-//         }
-//         return arr.join("")
-//     }
-//     let real = (Number(arr[0] + arr[1]) + 12).toString()
-//     let newarr = real.split("")
-//     arr.splice(0, 1, newarr[0])
-//     arr.splice(1, 1, newarr[1])
-//     return arr.join("")
-// }
+function timeConversion(s) {
+    // Write your code here
+    let arr = s.split("")
+    arr.splice(8, 2)
+    console.log(arr)
+    if (s.includes("AM")) {
+        if (s.includes("12")) {
+            // console.log(s)
+            arr.splice(0, 1, "0")
+            arr.splice(1, 1, "0")
+        }
+        return arr.join("")
+    }
+    if (s.includes("12")) {
+        if (s.includes("PM")) {
+            let arr = s.split("")
+            arr.splice(8, 2)
+        }
+        return arr.join("")
+    }
+    let real = (Number(arr[0] + arr[1]) + 12).toString()
+    let newarr = real.split("")
+    arr.splice(0, 1, newarr[0])
+    arr.splice(1, 1, newarr[1])
+    return arr.join("")
+}

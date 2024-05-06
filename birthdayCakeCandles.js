@@ -41,14 +41,14 @@
 // Solution
 
 
-// function birthdayCakeCandles(candles) {
-//     // Write your code here
-//     let max = Math.max(...candles)
-//     var count = 0
-//     for (var i = 0; i < candles.length; i++) {
-//         if (candles[i] === max) {
-//             count++
-//         }
-//     }
-//     return count
-// }
+function birthdayCakeCandles(candles) {
+    // Write your code here
+    let max = Math.max(...candles)
+    var count = 0
+    for (var i = 0; i < candles.length; i++) {
+        if (candles[i] === max) {
+            count++
+        }
+    }
+    return count
+}
